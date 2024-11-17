@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love's Heartbeat 💖</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Nền video -->
+  <div class="background-video">
+    <video autoplay loop muted>
+      <source src="video.mp4" type="video/mp4">
+    </video>
+  </div>
+  
+  <div class="container">
+    <h1 class="title">To My Love 💝</h1>
+    <p class="message">Nhập tên và ngày kỷ niệm của chúng ta để mở khóa điều bất ngờ!</p>
+    <input type="text" id="nameInput" placeholder="Nhập tên của bạn..." />
+    <input type="date" id="dateInput" />
+    <button id="unlockButton">Mở khóa</button>
+    <p id="errorMessage" class="hidden">Thông tin không chính xác! ❌</p>
+
+    <!-- Lời bất ngờ -->
+    <div id="surprise" class="hidden">
+      <p class="surprise-line">Chỉ muốn nói rằng...</p>
+      <p class="surprise-line">Tui cho phép em iu tui! ❤️</p>
+      <p class="surprise-line">Em chỉ là của riêng mình tui! 🌟</p>
+      <div id="heartAnimation" class="hidden"></div>
+    </div>
+    
+    <!-- Điều khiển nhạc -->
+    <button id="toggleMusicButton" class="hidden">🔊 Tắt nhạc</button>
+  </div>
+
+  <audio id="backgroundMusic" loop>
+    <source src="roa-music-walk-around(chosic.com).mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
